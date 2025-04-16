@@ -5,9 +5,9 @@
     <div>Data Fine:<br>{{endDate.slice(0, 10)}}</div>
   </div>
   <div class="sub-container2">
-    <div>{{minTempTime.time.slice(0, 10)}}<br>{{round(minTempTime.temp)}}°C</div>
-    <div>{{maxTempTime.time.slice(0, 10)}}<br>{{round(maxTempTime.temp)}}°C</div>
-    <div>{{round(tempMean)}}°C</div>
+    <div>Temp Min<br>{{round(minTempTime.temp)}}°C<br>Giorno: {{minTempTime.time.slice(0, 10)}}</div>
+    <div>Temp Max<br>{{round(maxTempTime.temp)}}°C<br>Giorno: {{maxTempTime.time.slice(0, 10)}}</div>
+    <div>Temp Media<br>{{round(tempMean)}}°C</div>
   </div>
 </div>
 <router-outlet />
