@@ -30,6 +30,19 @@ describe('ProcessingService', () => {
   });
 
   it('should convert hourly obj to TempTime Array', () => {
-    
+    //copia da andrea
   })
+
+  it('should convert C to K', () => {
+    expect(service.fromCtoK(25)).toEqual(298.15);
+    expect(service.fromCtoK(33)).toEqual(306.15);
+
+    // const cArray = [70, -10, 60, 0];
+    // const kArray = [21.1, 36, 5, -19];
+    // for (let i = 0; i < cArray.length; i++) {
+    //   const c = cArray[i];
+    //   const k = kArray[i];
+    //   expect(service.fromCtoK(c)).toEqual(k);
+    // };
+  });
 });

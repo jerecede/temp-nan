@@ -1,0 +1,4 @@
+-fare test delle altri funzioni
+-fare un test con html
+-progetto vacanza:
+costruire feedreader, usare rss, come parsare un rss/xml

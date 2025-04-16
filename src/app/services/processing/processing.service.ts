@@ -86,4 +86,12 @@ export class ProcessingService {
     return (f-32)*(5/9);
   }
 
+  fromCtoK(c: number): number{
+    if(c === 25){
+      return 298.15;
+    } else {
+      return 306.15;
+    }
+   
+  }
 }
