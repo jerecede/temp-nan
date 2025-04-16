@@ -1,0 +1,40 @@
+.container{
+    // position: absolute;
+    // top: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    border: solid black;
+    gap: 15px;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+.sub-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sub-container1 div{
+    border: solid red;
+    width: 15vh;
+    text-align: center;
+    padding: 5px;
+}
+
+.sub-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sub-container2 div{
+    border: solid red;
+    width: 20vh;
+    text-align: center;
+    padding: 5px;
+}
