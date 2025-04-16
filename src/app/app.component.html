@@ -1,13 +1,13 @@
 <div class="container">
-  <h1>Temp NaN</h1>
+  <h1>Temp Nan</h1>
   <div class="sub-container1">
     <div>Data Inizio:<br>{{startDate.slice(0, 10)}}</div>
     <div>Data Fine:<br>{{endDate.slice(0, 10)}}</div>
   </div>
   <div class="sub-container2">
-    <div>Temp Min<br>{{round(minTempTime.temp)}}°C<br>Giorno: {{minTempTime.time.slice(0, 10)}}</div>
-    <div>Temp Max<br>{{round(maxTempTime.temp)}}°C<br>Giorno: {{maxTempTime.time.slice(0, 10)}}</div>
-    <div>Temp Media<br>{{round(tempMean)}}°C</div>
+    <div>Temp Min<br>{{round(minTempTime.temp * 10)/10}}°C<br>Giorno: {{minTempTime.time.slice(0, 10)}}</div>
+    <div>Temp Max<br>{{round(maxTempTime.temp * 10)/10}}°C<br>Giorno: {{maxTempTime.time.slice(0, 10)}}</div>
+    <div>Temp Media<br>{{round(tempMean * 10)/10}}°C</div>
   </div>
 </div>
 <router-outlet />

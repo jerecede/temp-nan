@@ -12,7 +12,6 @@ import { ProcessingService } from './services/processing/processing.service';
 })
 export class AppComponent {
   title = 'temp-nan';
-  data = null;
   tempMean: number = 0;
   maxTempTime: TempTime = {time: '', temp: 0};
   minTempTime: TempTime = {time: '', temp: 0};
@@ -30,8 +29,8 @@ export class AppComponent {
 
   async transformData(){
     const data = await this.dataServ.getData();
-    console.log(data);
     const tempArray = this.processingServ.getTempArrayFromHourlyData(data.hourly);
+    console.log(tempArray);
     this.maxTempTime = this.processingServ.getMaxTemp(tempArray);
     this.minTempTime = this.processingServ.getMinTemp(tempArray);
     this.tempMean = this.processingServ.getTempMean(tempArray);

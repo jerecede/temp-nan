@@ -19,8 +19,25 @@ export class ProcessingService {
         temp: this.fromFtoC(tempCurr),
       }
       tempTimeArray.push(tempTimeCUrr);
+      //tempTimeArray.push({time: timeCurr, temp: this.fromFtoC(tempCurr)});
     }
     return tempTimeArray;
+
+    //soluzione LORENZO:
+    // const tempTimeArray: TempTime[] = [];
+    // const hourlyArray = Object.values(hourly);
+    // for (let i = 0; i < (hourlyArray[0] as string[]).length; i++) {
+    //   const time = (hourlyArray[0] as string[])[i];
+    //   const temp = this.fromFtoC((hourlyArray[1] as number[])[i]);
+    //   tempTimeArray.push({time: time, temp: temp});
+    // }
+
+    //soluzione MAP FIGO
+    // const tempTimeArray: TempTime[] = [];
+    // const temperaturesArray: number[] = hourly.temperature_2m;
+    // const timesArray: string[] = hourly.time;
+    // return temperaturesArray.map((t,i) => ({temp: this.fromFtoC(t), time: timesArray[i]}))
+
   }
 
   getMinTemp(tempArray: TempTime[]): TempTime {
